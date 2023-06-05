@@ -45,8 +45,7 @@
   position: relative;
   transition: all 0.5s ease-in-out;
 }
-.navbar .icon span::before,
-.navbar .icon span::after {
+.navbar .icon span::before, .navbar .icon span::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -172,8 +171,7 @@
   position: relative;
   transition: all 0.5s ease-in-out;
 }
-.active .nav-inner .icon span::before,
-.active .nav-inner .icon span::after {
+.active .nav-inner .icon span::before, .active .nav-inner .icon span::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -252,4 +250,4 @@ footer .footer-inner .footer-item:nth-child(3) {
 footer .footer-inner .footer-item:nth-child(3) h4 a {
   text-align: center;
   width: 100%;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

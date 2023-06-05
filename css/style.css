@@ -110,14 +110,10 @@ header .layer {
   position: absolute;
   width: 80px;
   height: 80px;
-  -webkit-animation: layer;
-          animation: layer;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation: layer;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-delay: 0s;
 }
 header .layer:nth-child(1) {
   top: 10%;
@@ -159,7 +155,6 @@ header .header-content .header-text button {
   border: none;
   font-weight: bold;
   position: relative;
-  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
   transition: ease-out 0.4s;
 }
@@ -187,14 +182,10 @@ header .header-content .shapes .line {
   top: 30%;
   transform: rotate(-45deg);
   left: 40%;
-  -webkit-animation-name: line;
-          animation-name: line;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-name: line;
+  animation-iteration-count: 1;
+  animation-duration: 2.5s;
+  animation-delay: 0s;
 }
 header .header-content .shapes .triangle {
   width: 30px;
@@ -205,12 +196,9 @@ header .header-content .shapes .triangle {
   position: absolute;
   left: 33%;
   top: 40%;
-  -webkit-animation-name: triangle;
-          animation-name: triangle;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-name: triangle;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
 }
 header .header-content .header-path {
   width: 58%;
@@ -279,14 +267,10 @@ header .header-content .header-path .path-item:nth-child(3) {
 }
 .section .layer {
   position: absolute;
-  -webkit-animation: layer;
-          animation: layer;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation: layer;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-delay: 0s;
   font-size: 100px;
 }
 .section .layer:nth-child(1) {
@@ -340,7 +324,6 @@ header .header-content .header-path .path-item:nth-child(3) {
   border: none;
   font-weight: bold;
   position: relative;
-  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
   transition: ease-out 0.4s;
 }
@@ -376,10 +359,8 @@ header .header-content .header-path .path-item:nth-child(3) {
   width: 300px;
   background-color: #222;
   border: 15px solid #fff;
-  -webkit-animation-name: image;
-          animation-name: image;
-  -webkit-animation-delay: initial;
-          animation-delay: initial;
+  animation-name: image;
+  animation-delay: initial;
 }
 
 .school-rooms {
@@ -390,14 +371,10 @@ header .header-content .header-path .path-item:nth-child(3) {
 }
 .school-rooms .layer {
   position: absolute;
-  -webkit-animation: layer;
-          animation: layer;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation: layer;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-delay: 0s;
   font-size: 100px;
   width: 60px;
   height: 60px;
@@ -449,7 +426,6 @@ header .header-content .header-path .path-item:nth-child(3) {
   position: absolute;
   top: 12%;
   right: 44%;
-  -webkit-animation: scale-in-hor-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate both;
   animation: scale-in-hor-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate both;
 }
 .school-rooms .testimonal-text p {
@@ -524,7 +500,6 @@ header .header-content .header-path .path-item:nth-child(3) {
   border: none;
   font-weight: bold;
   position: relative;
-  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
   transition: ease-out 0.4s;
 }

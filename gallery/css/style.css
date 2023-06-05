@@ -110,14 +110,10 @@ body {
   height: 40px;
   position: absolute;
   display: none;
-  -webkit-animation: layer;
-          animation: layer;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation: layer;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-delay: 0s;
 }
 .icons img:nth-child(1) {
   top: 40%;
@@ -187,10 +183,8 @@ body {
   width: 400px;
   height: 300px;
   margin: 10px;
-  -webkit-animation-name: image;
-          animation-name: image;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-name: image;
+  animation-duration: 1.5s;
 }
 .gallery .gallery-photos .image {
   display: none;
@@ -214,7 +208,6 @@ body {
   border: none;
   font-weight: bold;
   position: relative;
-  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
   animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
   transition: ease-out 0.4s;
   margin: 30px 0;
@@ -246,7 +239,6 @@ body {
   z-index: 100;
   display: none;
   transition: ease-in-out 1s;
-  -webkit-animation: fade-in-bck 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bck 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .popup-image span {
@@ -269,21 +261,8 @@ body {
   width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-animation-name: popup-animation;
-          animation-name: popup-animation;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
-
-@-webkit-keyframes scale-up-hor-left {
-  0% {
-    transform: scaleX(0.4);
-    transform-origin: 0% 0%;
-  }
-  100% {
-    transform: scaleX(1);
-    transform-origin: 0% 0%;
-  }
+  animation-name: popup-animation;
+  animation-duration: 1.5s;
 }
 @keyframes scale-up-hor-left {
   0% {
@@ -297,16 +276,6 @@ body {
     transform-origin: 0% 0%;
   }
 }
-@-webkit-keyframes image {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 @keyframes image {
   0% {
     transform: translateY(50px);
@@ -317,16 +286,6 @@ body {
     opacity: 1;
   }
 }
-@-webkit-keyframes fade-in-bck {
-  0% {
-    transform: translateZ(80px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
 @keyframes fade-in-bck {
   0% {
     transform: translateZ(80px);
@@ -334,14 +293,6 @@ body {
   }
   100% {
     transform: translateZ(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes layer {
-  0% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }

@@ -35,12 +35,11 @@ if (body < "968px") {
     if (!menuOpen) {
       menuBtn.classList.add(`open`);
       menuOpen = true;
-      navbar.setAttribute(`class`, `active`);
+      navbar.classList.add("active");
     } else {
       menuBtn.classList.remove(`open`);
       menuOpen = false;
-      navbar.removeAttribute(`class`, `active`);
-      navbar.setAttribute(`class`, `navbar`);
+      navbar.classList.remove("active");
     }
   });
   for (i = 0; i <= lin.length; i++) {
