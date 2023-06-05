@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Ribeye+Marrow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-photo/back-to-school-background-with-school-supplies-and-copy-space_23-2148959021.jpg?w=1380&t=st=1661254902~exp=1661255502~hmac=c23357d4f227b689b29e614558624f42b8a71be0e9860315e261f4e8ac862d34);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+}
+.navbar .nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+.navbar .nav-inner .logo {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  font-family: "Ribeye Marrow", cursive;
+}
+.navbar .nav-inner .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.navbar .nav-inner .links {
+  width: 65%;
+}
+.navbar .nav-inner .links ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+.navbar .nav-inner .links ul li a {
+  text-decoration: none;
+  font-size: 23px;
+  color: #111;
+  position: relative;
+  padding: 5px 0;
+}
+.navbar .nav-inner .links ul li a::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(24, 46, 70);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: ease-in 0.3s;
+}
+.navbar .nav-inner .links ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(185, 148, 60);
+  bottom: 0;
+  left: 0;
+  transition: width ease-in 0.3s;
+}
+.navbar .nav-inner .links ul li a:hover::after {
+  width: 100%;
+}
+.navbar .nav-inner .links ul li a:hover::before {
+  width: 100%;
+}
+.navbar .nav-inner .btns button {
+  width: 170px;
+  height: 38px;
+  background-color: transparent;
+  font-size: 18px;
+  position: relative;
+  border: 1px solid #111;
+}
+.navbar .nav-inner .btns button::after {
+  content: "";
+  width: 166px;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: ease-in-out 0.3s;
+}
+.navbar .nav-inner .btns button:hover::after {
+  bottom: -5px;
+  right: -5px;
+  border: 1px solid #111;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: none;
+  -webkit-animation: layer;
+          animation: layer;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.icons img:nth-child(1) {
+  top: 40%;
+  left: 10%;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+.icons img:nth-child(2) {
+  top: 20%;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+.icons img:nth-child(3) {
+  top: 70%;
+  right: 15%;
+  width: 60px;
+  height: 60px;
+}
+.icons img:nth-child(4) {
+  bottom: -30%;
+  left: 10%;
+  width: 60px;
+  height: 60px;
+}
+.icons img:nth-child(5) {
+  bottom: -60%;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+}
+.icons img:nth-child(6) {
+  bottom: -90%;
+  left: 10%;
+  width: 60px;
+  height: 60px;
+}
+.icons img:nth-child(7) {
+  bottom: -150%;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+}
+.icons img:nth-child(8) {
+  bottom: -170%;
+  left: 10%;
+  width: 60px;
+  height: 60px;
+}
+
+.gallery {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Aboreto", cursive;
+  margin: 40px;
+}
+.gallery .gallery-photos {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .gallery-photos img {
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  -webkit-animation-name: image;
+          animation-name: image;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.gallery .gallery-photos .image {
+  display: none;
+}
+.gallery .gallery-photos .image:nth-child(1),
+.gallery .gallery-photos .image:nth-child(2),
+.gallery .gallery-photos .image:nth-child(3),
+.gallery .gallery-photos .image:nth-child(4),
+.gallery .gallery-photos .image:nth-child(5),
+.gallery .gallery-photos .image:nth-child(6) {
+  display: inline-block;
+}
+.gallery button {
+  width: 170px;
+  height: 50px;
+  margin-top: 50px;
+  background-color: rgb(0, 191, 255);
+  color: #fff;
+  font-size: 18px;
+  font-family: "Aboreto", cursive;
+  border: none;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+  transition: ease-out 0.4s;
+  margin: 30px 0;
+}
+.gallery button::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 10px;
+  background-color: rgb(255, 225, 0);
+  top: 20px;
+  right: -32px;
+  transition: ease-out 0.4s;
+}
+.gallery button:hover {
+  background-color: rgba(0, 191, 255, 0.598);
+}
+.gallery button:hover::after {
+  right: -40px;
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+  transition: ease-in-out 1s;
+  -webkit-animation: fade-in-bck 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-bck 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation-name: popup-animation;
+          animation-name: popup-animation;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    transform: scaleX(0.4);
+    transform-origin: 0% 0%;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+    transform: scaleX(0.4);
+    transform-origin: 0% 0%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+}
+@-webkit-keyframes image {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes image {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in-bck {
+  0% {
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bck {
+  0% {
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes layer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes layer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  width: 100%;
+  height: 45vh;
+  background-color: #2b2a29;
+}
+footer img {
+  width: 100%;
+  height: auto;
+}
+footer .footer-inner {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+footer .footer-inner .footer-item {
+  width: 300px;
+  height: 300px;
+  line-height: 2;
+}
+footer .footer-inner .footer-item a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  text-align: justify;
+  font-family: "Aboreto", cursive;
+  transition: all ease-in 0.2s;
+}
+footer .footer-inner .footer-item a:hover {
+  color: #00a0e3;
+}
+footer .footer-inner .footer-item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin-top: 100px;
+  margin-left: 100px;
+  color: #fff;
+  font-family: "Aboreto", cursive;
+  font-size: 12px;
+}
+footer .footer-inner .footer-item:nth-child(3) p {
+  transition: all ease-in 0.3s;
+  font-size: 16px;
+}
+footer .footer-inner .footer-item:nth-child(3) p:hover {
+  color: #00a0e3;
+}
+footer .footer-inner .footer-item:nth-child(3) a {
+  color: #00a0e3;
+  margin-top: 30px;
+  font-size: 15px;
+  transition: ease-in-out 1s;
+  position: relative;
+}
+footer .footer-inner .footer-item:nth-child(3) a::before {
+  content: "";
+  width: 0%;
+  font-size: 15px;
+  height: 30px;
+  position: absolute;
+  color: #cccccc;
+  border-bottom: 1px solid #cccccc;
+  transition: width ease-in-out 0.5s;
+}
+footer .footer-inner .footer-item:nth-child(3) a:hover {
+  color: #cccccc;
+}
+footer .footer-inner .footer-item:nth-child(3) a:hover::before {
+  width: 80%;
+}/*# sourceMappingURL=style.css.map */

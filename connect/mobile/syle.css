@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section .connect {
+  width: 90%;
+  background-size: 90%;
+  height: 520px;
+}
+section .connect .connect-item:nth-child(1) {
+  width: 100%;
+}
+section .connect .connect-item:nth-child(1) form {
+  width: 90%;
+}
+section .connect .connect-item:nth-child(1) form input,
+section .connect .connect-item:nth-child(1) form textarea {
+  width: 90%;
+}
+section .connect .connect-item:nth-child(1) form button {
+  width: 100px;
+  font-size: 14px;
+}
+section .connect .connect-item:nth-child(2) {
+  display: none;
+}/*# sourceMappingURL=syle.css.map */

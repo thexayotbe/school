@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:wght@300&family=Inconsolata:wght@200;300&family=Playfair+Display&family=Quicksand:wght@300&family=Ribeye+Marrow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://img.freepik.com/premium-vector/hand-drawn-back-to-school-background_52683-69036.jpg?w=1380);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+}
+.navbar .nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+.navbar .nav-inner .logo {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  font-family: "Ribeye Marrow", cursive;
+}
+.navbar .nav-inner .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.navbar .nav-inner .links {
+  width: 65%;
+}
+.navbar .nav-inner .links ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+.navbar .nav-inner .links ul li a {
+  text-decoration: none;
+  font-size: 23px;
+  color: #111;
+  position: relative;
+  padding: 5px 0;
+}
+.navbar .nav-inner .links ul li a::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(24, 46, 70);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: ease-in 0.3s;
+}
+.navbar .nav-inner .links ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(185, 148, 60);
+  bottom: 0;
+  left: 0;
+  transition: width ease-in 0.3s;
+}
+.navbar .nav-inner .links ul li a:hover::after {
+  width: 100%;
+}
+.navbar .nav-inner .links ul li a:hover::before {
+  width: 100%;
+}
+.navbar .nav-inner .btns button {
+  width: 170px;
+  height: 38px;
+  background-color: transparent;
+  font-size: 18px;
+  position: relative;
+  border: 1px solid #111;
+}
+.navbar .nav-inner .btns button::after {
+  content: "";
+  width: 166px;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: ease-in-out 0.3s;
+}
+.navbar .nav-inner .btns button:hover::after {
+  bottom: -5px;
+  right: -5px;
+  border: 1px solid #111;
+}
+
+.team {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: auto;
+}
+.team .team-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.team .team-section .teamitem {
+  width: 600px;
+  height: 350px;
+  margin: 10px;
+  display: flex;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  justify-content: space-around;
+  align-items: center;
+}
+.team .team-section .teamitem-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.team .team-section .teamitem-img img {
+  width: 100%;
+  height: auto;
+}
+.team .team-section .teamitem-text {
+  width: 320px;
+  height: 200px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 2px solid rgb(105, 105, 105);
+  /* From https://css.glass */
+}
+.team .team-section .teamitem-text h3 {
+  font-size: 25px;
+  margin: 10px;
+}
+.team .team-section .teamitem-text p {
+  font-size: 20px;
+  margin: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 45vh;
+  background-color: #2b2a29;
+}
+footer img {
+  width: 100%;
+  height: auto;
+}
+footer .footer-inner {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+footer .footer-inner .footer-item {
+  width: 300px;
+  height: 300px;
+  line-height: 2;
+}
+footer .footer-inner .footer-item a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  text-align: justify;
+  font-family: "Aboreto", cursive;
+  transition: all ease-in 0.2s;
+}
+footer .footer-inner .footer-item a:hover {
+  color: #00a0e3;
+}
+footer .footer-inner .footer-item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin-top: 100px;
+  margin-left: 100px;
+  color: #fff;
+  font-family: "Aboreto", cursive;
+  font-size: 12px;
+}
+footer .footer-inner .footer-item:nth-child(3) p {
+  transition: all ease-in 0.3s;
+  font-size: 16px;
+}
+footer .footer-inner .footer-item:nth-child(3) p:hover {
+  color: #00a0e3;
+}
+footer .footer-inner .footer-item:nth-child(3) a {
+  color: #00a0e3;
+  margin-top: 30px;
+  font-size: 15px;
+  transition: ease-in-out 1s;
+  position: relative;
+}
+footer .footer-inner .footer-item:nth-child(3) a::before {
+  content: "";
+  width: 0%;
+  font-size: 15px;
+  height: 30px;
+  position: absolute;
+  color: #cccccc;
+  border-bottom: 1px solid #cccccc;
+  transition: width ease-in-out 0.5s;
+}
+footer .footer-inner .footer-item:nth-child(3) a:hover {
+  color: #cccccc;
+}
+footer .footer-inner .footer-item:nth-child(3) a:hover::before {
+  width: 80%;
+}/*# sourceMappingURL=style.css.map */

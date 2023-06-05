@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Ribeye+Marrow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-vector/watercolor-back-to-school-background-with-white-space_52683-41450.jpg?w=1380&t=st=1660903946~exp=1660904546~hmac=66b0926bfe9fd2bdf1f9c4669a8c9d22d0445f959f2b36c9628ae8f198e2403e);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+.navbar .nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+.navbar .nav-inner .logo {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  font-family: "Ribeye Marrow", cursive;
+}
+.navbar .nav-inner .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.navbar .nav-inner .links {
+  width: 65%;
+}
+.navbar .nav-inner .links ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+.navbar .nav-inner .links ul li a {
+  text-decoration: none;
+  font-size: 23px;
+  color: #111;
+  position: relative;
+  padding: 5px 0;
+}
+.navbar .nav-inner .links ul li a::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(24, 46, 70);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: ease-in 0.3s;
+}
+.navbar .nav-inner .links ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(185, 148, 60);
+  bottom: 0;
+  left: 0;
+  transition: width ease-in 0.3s;
+}
+.navbar .nav-inner .links ul li a:hover::after {
+  width: 100%;
+}
+.navbar .nav-inner .links ul li a:hover::before {
+  width: 100%;
+}
+.navbar .nav-inner .btns button {
+  width: 170px;
+  height: 38px;
+  background-color: transparent;
+  font-size: 18px;
+  position: relative;
+  border: 1px solid #111;
+}
+.navbar .nav-inner .btns button::after {
+  content: "";
+  width: 166px;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: ease-in-out 0.3s;
+}
+.navbar .nav-inner .btns button:hover::after {
+  bottom: -5px;
+  right: -5px;
+  border: 1px solid #111;
+}
+
+.about {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+.about h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+.about .about-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-section .about-item {
+  width: 500px;
+  height: 300px;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(19.3px);
+  -webkit-backdrop-filter: blur(19.3px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+}
+.about .about-section .about-item p {
+  font-size: 18px;
+  padding: 20px 30px;
+}
+.about .about-section .small {
+  height: 70px;
+  position: relative;
+  /* From https://css.glass */
+  background: rgba(255, 198, 0, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(255, 198, 0, 0.15);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.about .about-section .small:nth-child(4)::before,
+.about .about-section .small:nth-child(8)::before,
+.about .about-section .small:nth-child(12)::before,
+.about .about-section .small:nth-child(16)::before {
+  content: "←";
+  font-size: 40px;
+  width: 40px;
+  position: absolute;
+  top: 15%;
+  left: -8%;
+  color: rgb(255, 225, 0);
+  font-weight: bolder;
+}
+.about .about-section .small:nth-child(1)::before,
+.about .about-section .small:nth-child(5)::before,
+.about .about-section .small:nth-child(9)::before,
+.about .about-section .small:nth-child(13)::before {
+  content: "→";
+  font-size: 40px;
+  width: 40px;
+  position: absolute;
+  top: 15%;
+  right: -8%;
+  color: rgb(255, 225, 0);
+  font-weight: bolder;
+}
+
+footer {
+  width: 100%;
+  height: 45vh;
+  background-color: #2b2a29;
+}
+footer img {
+  width: 100%;
+  height: auto;
+}
+footer .footer-inner {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+footer .footer-inner .footer-item {
+  width: 300px;
+  height: 300px;
+  line-height: 2;
+}
+footer .footer-inner .footer-item a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  text-align: justify;
+  font-family: "Aboreto", cursive;
+  transition: all ease-in 0.2s;
+}
+footer .footer-inner .footer-item a:hover {
+  color: #00a0e3;
+}
+footer .footer-inner .footer-item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin-top: 100px;
+  margin-left: 100px;
+  color: #fff;
+  font-family: "Aboreto", cursive;
+  font-size: 12px;
+}
+footer .footer-inner .footer-item:nth-child(3) p {
+  transition: all ease-in 0.3s;
+  font-size: 16px;
+}
+footer .footer-inner .footer-item:nth-child(3) p:hover {
+  color: #00a0e3;
+}
+footer .footer-inner .footer-item:nth-child(3) a {
+  color: #00a0e3;
+  margin-top: 30px;
+  font-size: 15px;
+  transition: ease-in-out 1s;
+  position: relative;
+}
+footer .footer-inner .footer-item:nth-child(3) a::before {
+  content: "";
+  width: 0%;
+  font-size: 15px;
+  height: 30px;
+  position: absolute;
+  color: #cccccc;
+  border-bottom: 1px solid #cccccc;
+  transition: width ease-in-out 0.5s;
+}
+footer .footer-inner .footer-item:nth-child(3) a:hover {
+  color: #cccccc;
+}
+footer .footer-inner .footer-item:nth-child(3) a:hover::before {
+  width: 80%;
+}/*# sourceMappingURL=style.css.map */
